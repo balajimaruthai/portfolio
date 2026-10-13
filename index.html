@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Portfolio of Balaji M - ML Engineer & Cloud Specialist. Specializing in AI, Deep Learning, Computer Vision, and Cloud Technologies.">
+  <title>Balaji M | ML Engineer & Cloud Specialist Portfolio</title>
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="index.css">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Theme Toggle Floating Button for Mobile -->
+  <button class="theme-toggle-floating" id="themeToggleFloat" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- Sidebar Navigation Panel -->
+  <aside>
+    <div class="brand">
+      <div class="brand-name">BALAJI M <span class="brand-dot"></span></div>
+      <div class="brand-sub">ML Engineer & Cloud Specialist</div>
+    </div>
+    
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <div class="nav-link active" onclick="switchTab('about')">
+          <i class="fa-regular fa-user"></i> About Me
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('education')">
+          <i class="fa-solid fa-graduation-cap"></i> Education
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('skills')">
+          <i class="fa-solid fa-code"></i> Technical Skills
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('experience')">
+          <i class="fa-regular fa-briefcase"></i> Experience
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('projects')">
+          <i class="fa-regular fa-folder-open"></i> Projects & Research
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('publications')">
+          <i class="fa-regular fa-file-lines"></i> Publications Showcase
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('certifications')">
+          <i class="fa-regular fa-bookmark"></i> Certifications
+        </div>
+      </li>
+      <li class="nav-item">
+        <div class="nav-link" onclick="switchTab('achievements')">
+          <i class="fa-regular fa-star"></i> Focus & Achievements
+        </div>
+      </li>
+    </ul>
+    
+    <div class="sidebar-footer">
+      <div class="theme-toggle-container">
+        <span class="theme-label">Theme Mode</span>
+        <button class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-moon"></i>
+          <span class="toggle-text">Dark Mode</span>
+        </button>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com" target="_blank" class="social-icon" aria-label="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:mbalajims1@gmail.com" class="social-icon" aria-label="Email Address">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main>
+
+    <!-- SECTION 1: ABOUT ME (Home / Landing Page) -->
+    <section id="about" class="section active">
+      <div class="about-grid">
+        <div class="about-info">
+          <span class="about-hello">Hello, my name is</span>
+          <h1 class="about-name">BALAJI M</h1>
+          
+          <div class="about-role-container">
+            <span class="about-role">ML Engineer & Cloud Specialist</span>
+            <span class="badge-open-work">
+              <span class="pulse-dot"></span> Open to Work
+            </span>
+          </div>
+          
+          <p class="about-desc">
+            I am a B.Tech graduate in Artificial Intelligence & Data Science from <strong>Paavai College of Engineering</strong>. Currently, I am expanding my skills as a Cloud Practitioner Trainee in Bangalore, specializing in scalable AI models and cloud automation infrastructure.
+          </p>
+          <p class="about-desc">
+            With hands-on experience in training deep learning models, configuring server-less predictive APIs, and setting up automated cloud recovery services, I am passionate about bridging the gap between intelligent algorithms and robust, cloud-native deployments.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <i class="fa-solid fa-brain highlight-icon"></i>
+              <h3 class="highlight-title">AI & ML Research</h3>
+              <p class="highlight-desc">Published researcher at IEEE (IIT Indore) and Springer (SVNIT Surat) in emergency forecasting and digital forensics.</p>
+            </div>
+            <div class="highlight-card">
+              <i class="fa-solid fa-cloud highlight-icon"></i>
+              <h3 class="highlight-title">Cloud Infrastructure</h3>
+              <p class="highlight-desc">Developing predictive APIs, microservices, and auto-healing AWS architectures.</p>
+            </div>
+          </div>
+          
+          <div class="contact-grid">
+            <div class="contact-item">
+              <i class="fa-solid fa-map-pin"></i>
+              <span>Bangalore, Karnataka, India</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 7010475523</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>mbalajims1@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-photo-panel">
+          <div class="photo-frame">
+            <img src="images/balaji_photo.png" alt="BALAJI M Portrait">
+          </div>
+          <div class="photo-meta">
+            <div class="photo-name">BALAJI M</div>
+            <div class="photo-title">ML & Cloud Specialist</div>
+            <div class="badge-open-work" style="display: inline-flex; margin-top: 0.25rem;">
+              <span class="pulse-dot"></span> Open to Opportunities
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: EDUCATION -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Academic Profile</span>
+        <h2 class="section-title">What I Studied</h2>
+      </div>
+      
+      <div class="education-timeline">
+        <div class="education-item">
+          <div class="education-dot"></div>
+          <div class="education-header">
+            <h3 class="education-degree">B.Tech in Artificial Intelligence & Data Science</h3>
+            <span class="education-date">2022 — 2026</span>
+          </div>
+          <div class="education-school">Paavai College of Engineering</div>
+          <ul class="education-details">
+            <li>Cumulative GPA: <strong>7.7 / 10</strong></li>
+            <li>Specialized Coursework: Machine Learning, Neural Networks, Computer Vision, Natural Language Processing, Big Data Analytics, Cloud Foundations.</li>
+            <li>Hands-on practical development in Smart Traffic Management, AI Waste Segregation, and Forensic Blockchain Integrity systems.</li>
+          </ul>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-dot"></div>
+          <div class="education-header">
+            <h3 class="education-degree">Higher Secondary School Certificate (HSC)</h3>
+            <span class="education-date">Graduated 2022</span>
+          </div>
+          <div class="education-school">Swamy Vivekananda Matric Higher Secondary School</div>
+          <ul class="education-details">
+            <li>Final Score: <strong>78%</strong></li>
+            <li>Focus: Physics, Chemistry, Mathematics, and Computer Science.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: TECHNICAL SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Expertise</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+      
+      <div class="skills-container">
+        <!-- ML & Deep Learning -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-gears"></i> ML & Deployment
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-tag"><i class="fa-brands fa-python"></i><span class="skill-name">Python</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-chart-line"></i><span class="skill-name">Scikit-learn</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-diagram-project"></i><span class="skill-name">TensorFlow</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-network-wired"></i><span class="skill-name">EfficientNet CNN</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-infinity"></i><span class="skill-name">RNN / LSTM</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-sliders"></i><span class="skill-name">Predictive Modelling</span></div>
+          </div>
+        </div>
+        
+        <!-- Cloud & DevOps -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-cloud"></i> Cloud & DevOps
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-tag"><i class="fa-brands fa-aws"></i><span class="skill-name">AWS EC2 & S3</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-server"></i><span class="skill-name">AWS VPC & IAM</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-shield-halved"></i><span class="skill-name">AWS Security</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-bolt"></i><span class="skill-name">FastAPI & Flask</span></div>
+            <div class="skill-tag"><i class="fa-brands fa-docker"></i><span class="skill-name">Docker</span></div>
+            <div class="skill-tag"><i class="fa-brands fa-git-alt"></i><span class="skill-name">Git & GitHub</span></div>
+          </div>
+        </div>
+        
+        <!-- Data Engineering -->
+        <div class="skill-category">
+          <h3 class="skill-category-title">
+            <i class="fa-solid fa-database"></i> ETL & Data Engineering
+          </h3>
+          <div class="skills-grid">
+            <div class="skill-tag"><i class="fa-solid fa-arrows-split-up-and-left"></i><span class="skill-name">ETL Pipelines</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-table"></i><span class="skill-name">Pandas & NumPy</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-database"></i><span class="skill-name">SQL & MySQL</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-chart-simple"></i><span class="skill-name">Power BI</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-chart-area"></i><span class="skill-name">Matplotlib & Seaborn</span></div>
+            <div class="skill-tag"><i class="fa-solid fa-filter"></i><span class="skill-name">Data Preprocessing</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: WORK EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Professional Path</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      
+      <div class="experience-list">
+        <!-- DBSM Cloud Practitioner -->
+        <div class="experience-card status-active">
+          <div class="experience-header">
+            <h3 class="experience-title">Cloud Practitioner Trainee</h3>
+            <span class="experience-date current">May 2026 — Present</span>
+          </div>
+          <div class="experience-company">Don Bosco Skill Mission (DBSM)</div>
+          <div class="experience-location"><i class="fa-solid fa-map-pin"></i> Bangalore, India</div>
+          <ul class="experience-bullets">
+            <li>Undergoing intensive training on cloud architecture design principles, focusing on building scalable and highly available distributed systems.</li>
+            <li>Gaining extensive hands-on experience with core Amazon Web Services (AWS) solutions, including EC2, S3, VPC, RDS, and IAM security controls.</li>
+            <li>Deploying sandboxed microservices, configuring load balancers, and implementing security groups to optimize application isolation and performance.</li>
+            <li>Preparing for the AWS Certified Cloud Practitioner examination to validate technical expertise in cloud foundations.</li>
+          </ul>
+        </div>
+
+        <!-- GradTwin -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">Machine Learning Engineer Intern</h3>
+            <span class="experience-date">Feb 2026 — Apr 2026</span>
+          </div>
+          <div class="experience-company">GradTwin Services (OPC) Pvt. Ltd.</div>
+          <div class="experience-location"><i class="fa-solid fa-map-pin"></i> Chennai, India (Remote)</div>
+          <ul class="experience-bullets">
+            <li>Built and evaluated supervised predictive models in Python using Scikit-learn, implementing feature engineering, preprocessing pipelines, and cross-validation to optimize model accuracy on structured datasets.</li>
+            <li>Delivered end-to-end ML solutions by translating business requirements into model specifications, benchmarking performance metrics, and documenting results for stakeholder review.</li>
+            <li>Demonstrated motivation, a self-starter attitude, and par excellence performance on all machine learning domain assignments.</li>
+          </ul>
+        </div>
+        
+        <!-- NSIC -->
+        <div class="experience-card">
+          <div class="experience-header">
+            <h3 class="experience-title">AI & ML Intern</h3>
+            <span class="experience-date">Jan 2025 — Feb 2025</span>
+          </div>
+          <div class="experience-company">NSIC Technical Service Centre</div>
+          <div class="experience-location"><i class="fa-solid fa-map-pin"></i> Chennai, India</div>
+          <ul class="experience-bullets">
+            <li>Executed end-to-end data analysis workflows including data ingestion, cleaning, exploratory data analysis (EDA), and reporting using Python and Power BI.</li>
+            <li>Designed and delivered critical KPI dashboards for non-technical stakeholders to enhance business intelligence.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: PROJECTS & RESEARCH -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Innovation & Code</span>
+        <h2 class="section-title">Projects & Research</h2>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Emergency Ward Rush Prediction -->
+        <div class="project-card">
+          <i class="fa-solid fa-truck-medical project-icon"></i>
+          <h3 class="project-title">Emergency Ward Rush Prediction</h3>
+          <p class="project-desc">
+            Developed an AI-based Emergency Ward Rush Prediction system using Machine and Deep Learning to forecast patient inflow and identify high-risk emergency cases. Implemented LSTM-HCRNN and Particle Swarm Optimization to improve planning and emergency decision-making.
+          </p>
+          <div class="project-tech">
+            <span class="tech-pill">LSTM-HCRNN</span>
+            <span class="tech-pill">Swarm Optimization</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Jupyter</span>
+          </div>
+        </div>
+        
+        <!-- Evidence Management System -->
+        <div class="project-card">
+          <i class="fa-solid fa-link-slash project-icon"></i>
+          <h3 class="project-title">Blockchain Evidence Integrity System</h3>
+          <p class="project-desc">
+            Developed a Blockchain-based Digital Evidence Management System ensuring secure storage, tamper detection, and a transparent chain of custody for forensic investigations. Integrated Deep Learning models, fuzzy hashing, and blockchain.
+          </p>
+          <div class="project-tech">
+            <span class="tech-pill">Blockchain</span>
+            <span class="tech-pill">Fuzzy Hashing</span>
+            <span class="tech-pill">Deep Learning</span>
+            <span class="tech-pill">TensorFlow</span>
+          </div>
+        </div>
+        
+        <!-- Cloud Failure Auto-Healing -->
+        <div class="project-card">
+          <i class="fa-solid fa-heart-pulse project-icon"></i>
+          <h3 class="project-title">AI Cloud Failure Detection & Auto-Healing</h3>
+          <p class="project-desc">
+            Designed an automated system to monitor cloud services, detect server crashes or anomalies, and automatically recover failed services without human intervention. Implemented automated recovery workflows and intelligent monitoring.
+          </p>
+          <div class="project-tech">
+            <span class="tech-pill">FastAPI</span>
+            <span class="tech-pill">Docker</span>
+            <span class="tech-pill">AWS Cloud</span>
+            <span class="tech-pill">Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: PUBLICATIONS SHOWCASE (Detailed, separated showcase) -->
+    <section id="publications" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Academic Research</span>
+        <h2 class="section-title">Publications Showcase</h2>
+      </div>
+      
+      <p class="showcase-intro">
+        Explore my peer-reviewed research papers published in prestigious international platforms. Click on any publication card to view the concept details, conference info, and a detailed explanation of why this research was conducted.
+      </p>
+      
+      <div class="publications-showcase-container">
+        
+        <!-- IEEE Publication Case -->
+        <div class="publication-showcase-card" onclick="openPublicationDetails('ieee')">
+          <div class="pub-visual">
+            <img src="images/svnit_surat_cert.jpg" class="pub-bg-blur" alt="Background Blur">
+            <div class="paper-preview-box-enhanced">
+              <span class="paper-journal-badge"><i class="fa-solid fa-scroll"></i> IEEE ICCCNT 2025</span>
+              <h3 class="paper-visual-title">Smart Intelligence-Based Emergency Ward Rush Prediction Using Deep Feature Swarm Intelligence with LSTM Gated Hyper Capsule RNN</h3>
+              <p class="paper-visual-authors">Balaji M, et al.</p>
+              <div class="paper-mock-cert-indicator">
+                <i class="fa-solid fa-award"></i> Certificate Verified (IIT Indore)
+              </div>
+            </div>
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta-row">
+              <span class="pub-badge ieee">IEEE Published</span>
+              <span class="pub-date">July 2025</span>
+            </div>
+            <h3 class="pub-title">Smart Intelligence-Based Emergency Ward Rush Prediction Using Deep Feature Swarm Intelligence</h3>
+            <p class="pub-description">
+              Emergency department overcrowding is a critical global issue that increases patient mortality rates. This research develops a hybrid deep learning model combining Long Short-Term Memory (LSTM) cells with Capsule Networks and Swarm Optimization to forecast patient surge levels accurately.
+            </p>
+            <div class="pub-highlights-bullets">
+              <span><i class="fa-solid fa-circle-check"></i> Presented at IIT Indore</span>
+              <span><i class="fa-solid fa-circle-check"></i> Hyperparameter Tuning via PSO</span>
+              <span><i class="fa-solid fa-circle-check"></i> Hybrid LSTM-HCRNN model</span>
+            </div>
+            <div class="pub-action-btn">
+              <span>View Concepts & Certificate</span> <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Springer Publication Case -->
+        <div class="publication-showcase-card" onclick="openPublicationDetails('springer')">
+          <div class="pub-visual">
+            <img src="images/svnit_surat_cert.jpg" class="pub-bg-blur" alt="Background Blur">
+            <div class="paper-preview-box-enhanced springer-theme">
+              <span class="paper-journal-badge"><i class="fa-solid fa-scroll"></i> Springer Lecture Notes</span>
+              <h3 class="paper-visual-title">A novel approach to digital evidence integrity and chain of custody in forensic analysis</h3>
+              <p class="paper-visual-authors">Balaji M, et al.</p>
+              <div class="paper-mock-cert-indicator">
+                <i class="fa-solid fa-award"></i> Certificate Verified (SVNIT Surat)
+              </div>
+            </div>
+          </div>
+          <div class="pub-content">
+            <div class="pub-meta-row">
+              <span class="pub-badge springer">Springer Published</span>
+              <span class="pub-date">April 2026</span>
+            </div>
+            <h3 class="pub-title">A Novel Approach to Digital Evidence Integrity and Chain of Custody in Forensic Analysis</h3>
+            <p class="pub-description">
+              Standard hash algorithms fail to preserve transaction history when a single bit changes in a forensic file. This research proposes an integrated framework that combines deep learning fuzzy hashing with a decentralized Blockchain architecture to record secure edits and timeline.
+            </p>
+            <div class="pub-highlights-bullets">
+              <span><i class="fa-solid fa-circle-check"></i> Presented at SVNIT Surat</span>
+              <span><i class="fa-solid fa-circle-check"></i> Fuzzy Hashing + Blockchain</span>
+              <span><i class="fa-solid fa-circle-check"></i> Immutable Forensic Audit Trail</span>
+            </div>
+            <div class="pub-action-btn">
+              <span>View Concepts & Certificate</span> <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: CERTIFICATIONS (Showcase Page) -->
+    <section id="certifications" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Credentials & Skills</span>
+        <h2 class="section-title">Certifications Showcase</h2>
+      </div>
+      
+      <p class="showcase-intro">
+        Verifiable professional credentials, course achievements, and participations. Click on any card to view the official scanned certificate and detailed descriptions.
+      </p>
+      
+      <div class="showcase-grid">
+        
+        <!-- Google Cloud -->
+        <div class="showcase-card" onclick="openCertificateDetails('google_cloud')">
+          <div class="certificate-image-preview">
+            <img src="images/google_cloud_cert.jpg" alt="Google Cloud Certificate Preview">
+            <div class="preview-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag cloud-tag">Google Cloud</span>
+              <span class="showcase-date">Apr 2025</span>
+            </div>
+            <h3 class="showcase-card-title">Introduction to Data Analytics in Google Cloud</h3>
+            <div class="showcase-card-issuer">Google Cloud / Coursera</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Board Infinity -->
+        <div class="showcase-card" onclick="openCertificateDetails('board_infinity')">
+          <div class="certificate-image-preview">
+            <img src="images/board_infinity_cert.jpg" alt="Board Infinity Certificate Preview">
+            <div class="preview-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag ai-tag">Board Infinity</span>
+              <span class="showcase-date">Jul 2025</span>
+            </div>
+            <h3 class="showcase-card-title">Generative AI in HR - Impact & Application</h3>
+            <div class="showcase-card-issuer">Board Infinity / Coursera</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marcello Tech -->
+        <div class="showcase-card" onclick="openCertificateDetails('marcello_tech')">
+          <div class="certificate-image-preview">
+            <img src="images/marcello_tech_cert.jpg" alt="Marcello Tech Workshop Preview">
+            <div class="preview-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag workshop-tag">Marcello Tech</span>
+              <span class="showcase-date">Oct 2023</span>
+            </div>
+            <h3 class="showcase-card-title">Mobile App Development with Flutter & Dart</h3>
+            <div class="showcase-card-issuer">Marcello Tech / Paavai Coll.</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gradtwin Internship Experience -->
+        <div class="showcase-card" onclick="openCertificateDetails('gradtwin_internship')">
+          <div class="certificate-preview-box">
+            <div class="certificate-mock" style="border-color: #10b981;">
+              <span class="mock-title" style="color: #10b981;">GradTwin Services</span>
+              <div class="mock-content">
+                <span class="mock-recipient">Balaji M</span>
+                <span class="mock-topic">Machine Learning Intern Certificate</span>
+              </div>
+              <div class="mock-seal" style="background-color: #10b981; border-color: #34d399;"></div>
+              <div class="mock-signature-row">
+                <span class="mock-sig"></span>
+                <span class="mock-sig"></span>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag internship-tag">Internship Cert</span>
+              <span class="showcase-date">May 2026</span>
+            </div>
+            <h3 class="showcase-card-title">Machine Learning Domain Internship Certificate</h3>
+            <div class="showcase-card-issuer">GradTwin Services (OPC)</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- IBM Machine Learning -->
+        <div class="showcase-card" onclick="openCertificateDetails('ibm_ml')">
+          <div class="certificate-preview-box">
+            <div class="certificate-mock" style="border-color: #2563eb;">
+              <span class="mock-title" style="color: #2563eb;">IBM Developer</span>
+              <div class="mock-content">
+                <span class="mock-recipient">Balaji M</span>
+                <span class="mock-topic">Machine Learning with Python</span>
+              </div>
+              <div class="mock-seal" style="background-color: #2563eb; border-color: #60a5fa;"></div>
+              <div class="mock-signature-row">
+                <span class="mock-sig"></span>
+                <span class="mock-sig"></span>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag tech-tag">IBM Academy</span>
+              <span class="showcase-date">Completed</span>
+            </div>
+            <h3 class="showcase-card-title">Machine Learning with Python</h3>
+            <div class="showcase-card-issuer">IBM / Coursera</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- IBM Python for Data Science -->
+        <div class="showcase-card" onclick="openCertificateDetails('ibm_python')">
+          <div class="certificate-preview-box">
+            <div class="certificate-mock" style="border-color: #2563eb; transform: rotate(1deg);">
+              <span class="mock-title" style="color: #2563eb;">IBM Data Science</span>
+              <div class="mock-content">
+                <span class="mock-recipient">Balaji M</span>
+                <span class="mock-topic">Python for Data Science & AI</span>
+              </div>
+              <div class="mock-seal" style="background-color: #2563eb; border-color: #60a5fa;"></div>
+              <div class="mock-signature-row">
+                <span class="mock-sig"></span>
+                <span class="mock-sig"></span>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag tech-tag">IBM Academy</span>
+              <span class="showcase-date">Completed</span>
+            </div>
+            <h3 class="showcase-card-title">Python for Data Science & AI</h3>
+            <div class="showcase-card-issuer">IBM / Coursera</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- ACM NIT Trichy ROCS -->
+        <div class="showcase-card" onclick="openCertificateDetails('nit_rocs')">
+          <div class="certificate-preview-box">
+            <div class="certificate-mock" style="border-color: #0f172a; transform: rotate(-1deg);">
+              <span class="mock-title" style="color: #0f172a;">NIT Trichy</span>
+              <div class="mock-content">
+                <span class="mock-recipient">Balaji MS</span>
+                <span class="mock-topic">ACM Seminar on ROCS</span>
+              </div>
+              <div class="mock-seal" style="background-color: #0284c7; border-color: #38bdf8;"></div>
+              <div class="mock-signature-row">
+                <span class="mock-sig"></span>
+                <span class="mock-sig"></span>
+              </div>
+            </div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag acm-tag">ACM Sponsored</span>
+              <span class="showcase-date">Apr 2024</span>
+            </div>
+            <h3 class="showcase-card-title">ROCS: Research Opportunities in CS</h3>
+            <div class="showcase-card-issuer">NIT Tiruchirappalli</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- College Basics SUITS -->
+        <div class="showcase-card" onclick="openCertificateDetails('iecd_basics')">
+          <div class="certificate-image-preview">
+            <img src="images/iecd_cert.jpg" alt="IECD Marksheet Preview">
+            <div class="preview-overlay"><i class="fa-solid fa-expand"></i> View Statement</div>
+          </div>
+          <div class="showcase-card-body">
+            <div class="showcase-card-meta">
+              <span class="showcase-tag academic-tag">IECD Board</span>
+              <span class="showcase-date">Apr 2016</span>
+            </div>
+            <h3 class="showcase-card-title">Certificate in Computer Basics (SUITS)</h3>
+            <div class="showcase-card-issuer">Bharathidasan University</div>
+            <div class="showcase-action">
+              <span>Open Details</span> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: FOCUS, INTERESTS & ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <div class="section-header">
+        <span class="section-subtitle">Beyond Resume</span>
+        <h2 class="section-title">Focus & Achievements</h2>
+      </div>
+      
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3 class="skill-category-title"><i class="fa-regular fa-star"></i> Achievements & Merits</h3>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="achievement-badge"><i class="fa-solid fa-award"></i> IEEE Presenter</div>
+              <h4 class="highlight-title">Paper Presentation (ICCCNT 2025)</h4>
+              <p class="highlight-desc">Virtually presented advanced machine learning architecture at IIT Indore under ICCCNT 2025.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-badge"><i class="fa-solid fa-award"></i> Springer Author</div>
+              <h4 class="highlight-title">Paper Presentation (ET2ECN 2026)</h4>
+              <p class="highlight-desc">Authored and presented novel digital evidence security frameworks at SVNIT Surat.</p>
+            </div>
+            <div class="achievement-card">
+              <div class="achievement-badge"><i class="fa-solid fa-award"></i> Academic Merit</div>
+              <h4 class="highlight-title">Top Academic Standing</h4>
+              <p class="highlight-desc">Maintained a strong cumulative CGPA of 7.7 throughout the B.Tech AI & Data Science program.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skill-category" style="margin-top: 1.5rem;">
+          <h3 class="skill-category-title"><i class="fa-solid fa-magnifying-glass-chart"></i> Research Focus & Interests</h3>
+          <div class="interests-grid">
+            <div class="interest-tag">
+              <h4 class="interest-title">Deep Forecasting</h4>
+              <p class="interest-desc">Applying LSTM, GRU, and hybrid neural networks to predict sequence trends in medical care and traffic.</p>
+            </div>
+            <div class="interest-tag">
+              <h4 class="interest-title">Security & AI</h4>
+              <p class="interest-desc">Integrating Blockchain technology with cryptography and fuzzy hashing to secure raw training datasets and digital assets.</p>
+            </div>
+            <div class="interest-tag">
+              <h4 class="interest-title">Cloud Auto-Recovery</h4>
+              <p class="interest-desc">Building microservices with auto-scaling, failure detection, and automatic reboot/re-routing scripts using Docker and AWS.</p>
+            </div>
+            <div class="interest-tag">
+              <h4 class="interest-title">Swarm Optimization</h4>
+              <p class="interest-desc">Studying Particle Swarm Optimization (PSO) and evolutionary search heuristics to tune deep hyper-parameters.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- DYNAMIC SHOWCASE LIGHTBOX MODAL -->
+  <div class="modal-overlay" id="showcaseModal" onclick="closeModal(event)">
+    <div class="modal-container" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div class="modal-title-container">
+          <span class="modal-category" id="modalCategory">Showcase</span>
+          <h3 class="modal-title" id="modalTitle">Item Title</h3>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal()" aria-label="Close details dialog">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content dynamically injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Actions -->
+  <script src="app.js"></script>
+</body>
+</html>

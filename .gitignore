@@ -1,0 +1,12 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# Zip archives
+*.zip
+
+# Temp / system generated
+.system_generated/
+
+# PDF originals (optional: remove this if you want PDFs tracked)
+# *.pdf
